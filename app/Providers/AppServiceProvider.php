@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace RIASEC\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
