@@ -1,0 +1,21 @@
+.sidenav {
+    transform: translateX(0%);
+    background: #566573; }
+
+.sidenav li a, .sidenav li .material-icons{
+    color: #fff !important;
+    height: auto !important; }
+
+header, main, footer {
+    padding-left: 300px; }
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0; } }
+
+nav {
+    background: #566573;
+    display: none; }
+
+.circle {
+    width: 100% !important; }
