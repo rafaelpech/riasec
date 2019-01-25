@@ -23,7 +23,7 @@
         <ul id="slide-out" class="sidenav">
             <li>
                 <a href="#!">
-                    <img src="{{ URL::asset('img/riasec/Logo.png') }}" class="circle" alt="RIASEC">
+                    <img src="{{ URL::asset('img/riasec/Logo.png') }}" class="logo" alt="RIASEC">
                 </a>
             </li>
             <li>
