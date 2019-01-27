@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
     </head>
     <body>
+        <input type="hidden" id="webroot" value="{{ URL::asset('') }}">
     
         <nav>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -41,7 +42,9 @@
             
         </header>
         <main>
-            @yield('content')
+            <section class="px-4">
+                @yield('content')
+            </section>
         </main>
         <footer>
 
@@ -51,6 +54,8 @@
         <script src="{{ URL::asset('libs/materialize/js/materialize.js') }}"></script>
         {{-- Riasec scripts --}}
         <script src="{{ URL::asset('js/app.js') }}"></script>
+        {{-- Script of section --}}
+        @yield('script')
         {{-- Google  --}}
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
