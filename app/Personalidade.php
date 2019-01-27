@@ -4,7 +4,7 @@ namespace RIASEC;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Personalidad extends Model
+class Personalidade extends Model
 {
     //
 }
