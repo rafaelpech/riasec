@@ -19,4 +19,8 @@ Route::get('/riasec', function () {
     return view('modulodos.riasec.test');
 });
 
+Route::get('/results', function() {
+	return view('modulodos.riasec.result');
+});
+
 Route::get('/questions', 'RiasecController@list');
