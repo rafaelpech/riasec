@@ -24,3 +24,5 @@ Route::get('/results', function() {
 });
 
 Route::get('/questions', 'RiasecController@list');
+
+Route::resource('Registro','UsuarioController');
