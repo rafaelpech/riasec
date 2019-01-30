@@ -14,7 +14,7 @@ class UniversidadController extends Controller
      */
     public function index()
     {
-        //
+        return view('modulouno.RegistroUniversidad.index');
     }
 
     /**
