@@ -59,7 +59,7 @@
         </div>
         <div>
             <button type="button" class="waves-effect waves-light btn btn-primary-last left"><i class="material-icons left m-0">chevron_left</i>Salir</button>
-            <button type="button" class="waves-effect waves-light btn btn-primary-next right disabled"><i class="material-icons right m-0">chevron_right</i>Continuar</button>
+            <button type="button" class="waves-effect waves-light btn btn-primary-next right" id="btnNextRiasec"><i class="material-icons right m-0">chevron_right</i>Continuar</button>
         </div>
     </section>
 @endsection
