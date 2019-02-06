@@ -23,7 +23,7 @@ Route::get('/results', function() {
 	return view('modulodos.riasec.resultados');
 });
 
-Route::get('/questions', 'RiasecContro	ller@list');
+Route::get('/questions', 'RiasecController@list');
 
 Route::resource('Registro','UsuarioController');
 
