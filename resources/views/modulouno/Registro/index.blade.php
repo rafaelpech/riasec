@@ -34,10 +34,60 @@
         </div>
       </div>
 
-     
+      <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Estado</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Selecciona tu Estado</label>
+        </div>
+        
+      <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Municipio</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Selecciona tu Municipio</label>
+        </div>
+
+        <div class="input-field col s12">
+            
+                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box">Aviso de Privacidad</label>
+            
+         
+
+        </div>
+
+        <div class="input-field col s12">
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box">Aceptar Políticas de Uso</label>
+            </p>
+         
+
+        </div>
+
+        <div class="input field col s6">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Cancelar</button>
+        
+           
+        </div>
+        
+        <div class="fix-button input field col s6">
+            
+            <button class="save-button btn waves-effect waves-light" type="submit" name="action">Guardar</button>
+    
+        </div>
+        
      
     </form>
   </div>
 </div>
-    
+
+   
 @endsection

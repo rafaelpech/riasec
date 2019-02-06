@@ -35,7 +35,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -57,7 +57,7 @@ class UsuarioController extends Controller
      */
     public function edit(Usuario $usuario)
     {
-        //
+        return view('modulouno.Registro.editar');
     }
 
     /**
