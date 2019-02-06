@@ -35,7 +35,11 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         //
+=======
+        // 
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
     }
 
     /**
@@ -57,7 +61,11 @@ class UsuarioController extends Controller
      */
     public function edit(Usuario $usuario)
     {
+<<<<<<< HEAD
         //
+=======
+        return view('modulouno.Registro.editar');
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
     }
 
     /**

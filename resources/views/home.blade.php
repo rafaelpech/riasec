@@ -58,6 +58,12 @@
         @yield('script')
         {{-- Google  --}}
         <script>
+<<<<<<< HEAD
+=======
+            $(document).ready(function() {
+    $('select').material_select();
+  });
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

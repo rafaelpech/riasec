@@ -31,3 +31,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app'
 });
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548

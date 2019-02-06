@@ -54,3 +54,8 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548

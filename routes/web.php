@@ -20,13 +20,18 @@ Route::get('/riasec', function () {
 });
 
 Route::get('/results', function() {
+<<<<<<< HEAD
 	return view('modulodos.riasec.resultados');
+=======
+	return view('modulodos.riasec.result');
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
 });
 
 Route::get('/questions', 'RiasecController@list');
 
 Route::resource('Registro','UsuarioController');
 
+<<<<<<< HEAD
 Route::resource('RegistroUniversidad','UniversidadController');
 
 Route::get('/Usuario/EditarPerfil', function(){
@@ -36,3 +41,6 @@ Route::get('/Usuario/EditarPerfil', function(){
 Route::get('/login', function(){
 	return view('modulouno.Usuario.login');
 });
+=======
+Route::resource('RegistroUniversidad','UniversidadController');
+>>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
