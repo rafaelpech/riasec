@@ -20,27 +20,20 @@ Route::get('/riasec', function () {
 });
 
 Route::get('/results', function() {
-<<<<<<< HEAD
-	return view('modulodos.riasec.resultados');
-=======
 	return view('modulodos.riasec.result');
->>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
 });
 
 Route::get('/questions', 'RiasecController@list');
 
 Route::resource('Registro','UsuarioController');
 
-<<<<<<< HEAD
 Route::resource('RegistroUniversidad','UniversidadController');
 
-Route::get('/Usuario/EditarPerfil', function(){
-	return view('modulouno.Usuario.editarperfil');
-});
+//ruta para acceder a la lista de resultados pasando como parametro el codigo (ej: 'res')
+//Route::get('/resultado/{codigo}', 'ResultadoController@resultado');
+Route::get('/resultado/{codigo}', 'ResultadoController@listado')->name('listado');
+//ruta que ejecuta el metodo resulAlter del controlador ResultadoController
+//encargado de general las alternativas del codigo principal
+Route::get('/resultado/alternativas/{codigo}', 'ResultadoController@resultAlter')->name('alternativas');    
 
-Route::get('/login', function(){
-	return view('modulouno.Usuario.login');
-});
-=======
-Route::resource('RegistroUniversidad','UniversidadController');
->>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
+Route::get('/resultado/vermas/{codigo}/{descripcion}', 'ResultadoController@resultVermas')->name('vermas');
