@@ -4,17 +4,21 @@ namespace RIASEC\Http\Controllers;
 
 use RIASEC\Estado;
 use Illuminate\Http\Request;
+use function GuzzleHttp\json_encode;
 
 class EstadoController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Se cre un listado de los estados de la republica mexicana
+     * @var states $states
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        header('Content-Type: application/json');
+        $states = Estado::all();
+        echo json_encode($states);
+        die();
     }
 
     /**

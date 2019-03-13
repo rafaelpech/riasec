@@ -4,17 +4,22 @@ namespace RIASEC\Http\Controllers;
 
 use RIASEC\Ubicacion;
 use Illuminate\Http\Request;
+use function GuzzleHttp\json_encode;
+use DB;
 
 class UbicacionController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Se crea un listado de las ubicaciones de la republica mexicana
+     * @var locations $locations
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        header('Content-Type: application/json');
+        $locations = DB::select('SELECT * FROM vw_ubicaciones;');
+        echo json_encode($locations);
+        die();
     }
 
     /**

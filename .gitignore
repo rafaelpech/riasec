@@ -1,5 +1,7 @@
+/app/Providers
 /node_modules
 /public/hot
+/public/img/imgprofilers
 /public/storage
 /storage/*.key
 /vendor

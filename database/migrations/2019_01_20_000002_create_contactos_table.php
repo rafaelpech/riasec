@@ -24,7 +24,7 @@ class CreateContactosTable extends Migration
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('Cv_Contacto');
-            $table->integer('telefono');
+            $table->string('telefono', 10);
             $table->string('correo', 60);
             $table->string('web', 50);
         });

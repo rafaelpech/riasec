@@ -26,6 +26,8 @@ class CreateUniversidadesTable extends Migration
             $table->increments('Cv_Universidad');
             $table->string('photo', 100);
             $table->string('nogeneral', 25);
+            $table->string('correo', 75);
+            $table->string('upassword', 100);
             $table->string('nombreuniversidad', 40);
             $table->integer('contacto')->unsigned();
             $table->integer('ubicacion')->unsigned();
@@ -54,8 +56,8 @@ class CreateUniversidadesTable extends Migration
      *
      * @return void
      */
-     public function down()
-     {
-       Schema::dropIfExists($this->set_schema_table);
-     }
+    public function down()
+    {
+        Schema::dropIfExists($this->set_schema_table);
+    }
 }

@@ -24,7 +24,7 @@ class CreateClasificacionesTable extends Migration
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('Cv_Clasificacion');
-            $table->string('clacificacion', 100);
+            $table->string('clasificacion', 100);
             $table->integer('combinacion')->unsigned();
             $table->integer('nivel')->unsigned();
 

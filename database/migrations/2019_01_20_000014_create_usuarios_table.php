@@ -24,16 +24,18 @@ class CreateUsuariosTable extends Migration
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('Cv_Usuario');
-            $table->string('photo', 100);
             $table->string('nombre', 25);
             $table->string('apat', 15);
             $table->string('amat', 15)->nullable()->default(null);
             $table->integer('resultado')->unsigned();
-            $table->string('correo', 35);
-            $table->string('upassword', 25);
+            $table->string('correo', 75);
+            $table->string('upassword', 100);
             $table->integer('ubicacion')->unsigned();
             $table->string('activo', 1);
             $table->integer('codigo')->nullable()->default(null)->unsigned();
+
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
 
             $table->index(["ubicacion"], 'Ubicacion');
 
@@ -66,8 +68,8 @@ class CreateUsuariosTable extends Migration
      *
      * @return void
      */
-     public function down()
-     {
-       Schema::dropIfExists($this->set_schema_table);
-     }
+    public function down()
+    {
+        Schema::dropIfExists($this->set_schema_table);
+    }
 }

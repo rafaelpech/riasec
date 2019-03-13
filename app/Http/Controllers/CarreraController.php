@@ -14,7 +14,7 @@ class CarreraController extends Controller
      */
     public function index()
     {
-        //
+        return view('modulotres.carrera.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class CarreraController extends Controller
      */
     public function create()
     {
-        //
+        return view('modulotres.carrera.create');
     }
 
     /**

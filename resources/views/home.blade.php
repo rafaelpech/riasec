@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Riasec - @yield('title')</title>
         {{-- Favicon --}}
         <link rel="shortcut icon" href="{{ URL::asset('img/riasec/Logo.png') }}" type="image/png">
@@ -13,6 +14,8 @@
         <link rel="stylesheet" href="{{ URL::asset('libs/materialize/css/materialize.css') }}">
         {{-- Riasec style --}}
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+        {{-- Library´s --}}
+        @yield('head')
     </head>
     <body>
         <input type="hidden" id="webroot" value="{{ URL::asset('') }}">
@@ -27,15 +30,7 @@
                     <img src="{{ URL::asset('img/riasec/Logo.png') }}" class="logo" alt="RIASEC">
                 </a>
             </li>
-            <li>
-                <a href="#!"><i class="material-icons">home</i>Inicio</a>
-            </li>
-            <li>
-                <a href="#!"><i class="material-icons">info</i>Acerca de</a>
-            </li>
-            <li>
-                <a href="#!"><i class="material-icons">person</i>Contacto</a>
-            </li>
+            @yield('menu')
         </ul>
 
         <header>
@@ -57,14 +52,8 @@
         {{-- Script of section --}}
         @yield('script')
         {{-- Google  --}}
-        <script>
-<<<<<<< HEAD
-=======
-            $(document).ready(function() {
-    $('select').material_select();
-  });
->>>>>>> 43690573167a16491aa9e343c96e5cfdcbdd9548
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        <script> 
+           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
